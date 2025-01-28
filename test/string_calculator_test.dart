@@ -22,4 +22,9 @@ void main(){
     expect(StringCalculator().add("1,2,3,4"), equals(10));
   });
 
+  //to handle new line-
+  test("test case to handle new line and return sum ",(){
+    expect(StringCalculator().add("1\n2,3"), equals(6));
+  });
+
 }
