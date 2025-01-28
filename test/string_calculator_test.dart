@@ -12,4 +12,8 @@ void main(){
   test("test case for empty string", (){
     expect(StringCalculator().add(""), equals(0));
   });
+
+  test("return the sum of number ",(){
+    expect(StringCalculator().add("1,2"), equals(3));
+  });
 }
