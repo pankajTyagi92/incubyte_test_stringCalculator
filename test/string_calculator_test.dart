@@ -16,4 +16,10 @@ void main(){
   test("return the sum of number ",(){
     expect(StringCalculator().add("1,2"), equals(3));
   });
+
+  //test case to test for more than 2 number
+  test("return the sum of number more than 2 ",(){
+    expect(StringCalculator().add("1,2,3,4"), equals(10));
+  });
+
 }
