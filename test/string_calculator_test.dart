@@ -36,4 +36,7 @@ void main(){
   test('Negative numbers throw an exception', () {
     expect(() => StringCalculator().add("1,-2,3"), throwsA(isA<FormatException>()));
   });
+  test('Numbers bigger than 1000 are ignored', () {
+    expect(StringCalculator().add("2,1001"), equals(2));
+  });
 }
