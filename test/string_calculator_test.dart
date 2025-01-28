@@ -31,4 +31,9 @@ void main(){
   test(' custom delimiter', () {
     expect(StringCalculator().add("//;\n1;2"), equals(3));
   });
+
+  // to show exception on -ve number
+  test('Negative numbers throw an exception', () {
+    expect(() => StringCalculator().add("1,-2,3"), throwsA(isA<FormatException>()));
+  });
 }
